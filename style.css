@@ -9,8 +9,17 @@
   border-radius: 6px;
 }
 
-.carousel-inner {
-  height: 500px;
+.carousel-item {
+  height: 35rem;
+  background-color: #000;
+}
+.carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 35rem;
+  opacity: 0.5;
 }
 
 #option-image {
@@ -18,24 +27,47 @@
   height: 160px;
 }
 
+.marketing-img {
+  width: 160px;
+  height: 160px;
+  transition: width 0.5s, height 0.5s;
+}
+
+.marketing-img:hover {
+  width: 200px;
+  height: 200px;
+}
+
 #parallaxBar {
-  height: 750px;
-  background-color: #000;
   background-image: url("/src/img/trilha.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#quote1 {
   color: #fff;
-  position: relative;
 }
 
 #parallaxBar2 {
-  height: 750px;
-  background-color: #000;
   background-image: url("/src/img/mulher-fazendo-ioga.jpg");
-  color: #fff;
-  position: relative;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 footer {
   color: #fff;
+}
+
+@media (max-width: 480px) {
+  .carousel-inner {
+    height: 250px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
